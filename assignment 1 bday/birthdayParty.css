@@ -1,0 +1,153 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* color: #624630; */
+    background-color: #ffddfb; 
+    /* background-image: url(Portfolio_bg.png); */
+}
+
+#wrapper {
+    /* background-color: white; */
+    /* width: 1200px; */
+    width: 100%;
+    /* margin: 1em auto; */
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+
+#landing p {
+    opacity: 1;
+	animation-name: fadeIn;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 7s;
+    /* animation-delay: 5s; */
+    color: #74adbe;
+}
+
+h1 {
+    font-family: "arpona", sans-serif;
+    font-style: bold;
+    color: rgb(115, 52, 52);
+}
+
+p{
+    font-family: "arpona", sans-serif;
+    /* font-style: bold; */
+    color: rgb(115, 52, 52);
+}
+
+#landing {
+    grid-column: span 12; 
+    /* makes the first text take up the whole row space */
+    margin-top: 100px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.line1{
+    opacity: 1;
+	animation-name: fadeIn;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.75s;
+
+    font-size: 80px;
+}
+
+.line2{
+    opacity: 1;
+	animation-name: fadeIn;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+
+    font-size: 100px;
+    transition: all 2s ease;
+}
+
+.line2:hover{
+    color: #74adbe; 
+    letter-spacing: 10px;
+    /* cursor: pointer; */
+}
+
+.line3{
+    opacity: 1;
+	animation-name: fadeIn;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 4s; 
+    /* animation-delay: 2s; */
+    
+    font-size: 80px;
+}
+
+/* these required me to animate individually */
+.line4{
+    opacity: 1;
+	animation-name: fadeIn;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 4.75s;
+    /* animation-delay: 2.75s; */
+    
+    font-size: 80px;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* preferably appear when we scroll to this part but idk */
+main {
+    grid-column: span 12;
+    font-size: x-large;
+
+    margin: 800px 50px 50px 50px;
+}
+
+main a {
+    color: #74adbe;
+    text-decoration: none;
+}
+
+main a:hover {
+    color:#74adbe5b;
+}
+
+.party {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb;
+    text-align: center;
+    margin-top: 200px;
+    
+}
+
+.party span {
+    color: #74adbe;
+}
+
+.leftPic {
+    width: 200px;
+    height: 200px;
+    margin-right: 50px;
+    margin-bottom: 200px;
+}
+
+.rightPic {
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+    margin-bottom: 200px;
+
+}
+
+
