@@ -49,7 +49,8 @@ h1 {
 /* important to state the element instead of just the id? */
 #rotation img{
     width: 400px;
-    transition: all 1s
+    transform-origin: center;
+    transition: all 1s;
 }
 
 #rotation:hover img{
@@ -81,7 +82,7 @@ h1 {
 }
 
 #imageRow img {
-    width: 200px;
+    width: 150px;
 }
 
 #imageRow .image1{
