@@ -1,0 +1,123 @@
+body {
+    /* font */
+    background-color: antiquewhite;
+
+    width: auto;
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
+}
+
+h1 {
+    /* makes sure the text takes up the entire row */
+    grid-column: span 12; 
+    text-transform:uppercase;
+    text-align: center;
+    font-size: 100px;
+    /* color:aqua; */
+    /* transition: color 1.0s; */
+    animation: color-ani 5s ease infinite alternate;
+}
+
+@keyframes color-ani{
+    0% {color: rgb(245, 132, 191)   }
+    50% {color: rgb(0, 195, 255)  }
+    100% {color:  rgb(215, 212, 124)  }
+}
+
+.movingAnimation {
+    position: absolute;
+    animation: star-ani 2s ease-in-out infinite alternate;
+    
+}
+
+.movingAnimation img {
+    width: 100px;
+}
+
+@keyframes star-ani {
+    0%   {top:0px; left: 770px; }
+    /* 33%  { opacity: 100%; right:1000px}
+    67%  { opacity: 100%; top:100px; right: 100px} */
+    100% {top: 0px; left:740px;}
+}
+
+/* #rotation{
+    width: 400px;
+    height: 400px;
+} */
+
+/* important to state the element instead of just the id? */
+#rotation img{
+    width: 400px;
+    transition: all 1s
+}
+
+#rotation:hover img{
+    transform: rotate(360deg);
+}
+
+/* this pushed out the image section and made the rotation crazier */
+/* #rotation .flower1{
+    padding-right: 100px; 
+} */
+
+/* styling the img itself doesn't work, needs a separate div... */
+/* .flower2{
+    width: 400px;
+    height: 400px;
+    transition: all .5s;
+}
+
+.flower2:hover img{
+    transform: rotate(-360deg);
+} */
+
+#imageRow {
+    grid-column: span 10; 
+    text-align: center;
+    /* margin: 50px; */
+    /* overflow: hidden; */
+    /* border-radius: 100px; */
+}
+
+#imageRow img {
+    width: 200px;
+}
+
+#imageRow .image1{
+    filter: blur(4px);
+    /* width: 200px; */
+    transition: .5s all;
+    /* margin: 10px; */
+    /* width: 100px; */
+}
+
+#imageRow:hover .image1{
+    filter: blur(0px);
+}
+
+/* middle image */
+#imageRow #img2{
+    filter: opacity(100%);
+    transition: .5s all;
+    /* margin: 10px; */
+    /* width: 150px; */
+}
+
+#imageRow:hover #img2{
+    filter: opacity(0%);
+}
+
+/* last image */
+#imageRow #img3{
+    filter: blur(4px);
+    transform: scaleX(-1);
+    transition: .5s all;
+    /* margin: 10px; */
+    /* width: 100px; */
+
+}
+
+#imageRow:hover #img3{
+    filter: blur(0px);
+}
