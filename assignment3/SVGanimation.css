@@ -1,0 +1,58 @@
+body {
+    background-image: url(assignment\ 3\ bg.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+p {
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+/* figure out why the svg size affects the background image */
+#CJA {
+    width: 300px;
+    display:block;
+    margin: auto;
+    height: 100vh; /*this helped fix the bg/centering issue...*/
+    /* animation: appear 1.0s; */
+    transition: 1s;
+    cursor: url(cloverCursor.png), auto;
+}
+
+#CJA:hover{
+    opacity: 30%;
+    width: 400px;
+    animation: cjaSpin ease 1.5s;
+}
+@keyframes cjaSpin {
+    0%   { transform: rotate(360deg);}
+  100% { transform: rotate(0deg);}
+}
+
+#C{
+    animation: cAppear 1.0s;
+}
+@keyframes cAppear {
+    0% { transform: translate(0,-50px); opacity: 0%;} 
+    100%{ transform: translate(0,0); opacity:100%; }
+}
+
+#J{
+    animation: jAppear 1.0s;
+    animation-delay: 0.2s;
+}
+@keyframes jAppear {
+    0% { transform: translate(0,-50px); opacity: 0%;} 
+    100%{ transform: translate(0,0); opacity:100%; }
+}
+
+#A{
+    animation: aAppear 1.0s;
+    animation-delay: 0.4s;
+}
+@keyframes aAppear {
+    0% { transform: translate(0,-50px); opacity: 0%;} 
+    100%{ transform: translate(0,0); opacity:100%; }
+}
