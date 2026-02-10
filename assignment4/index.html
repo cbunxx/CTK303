@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Jacquard+12&family=Miniver&family=Princess+Sofia&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <main>
+      <img class= "p1" src="Assets/laceBorder.png"></img>
+      <h1>let's pet seals!</h1>
+      <img class="p2" src="Assets/laceBorder.png"></img>
+    
+    
+    </main>
+    <script src="sketch.js"></script> 
+    <script>
+      function cursorGrab(){
+          document.getElementById('sealCanvas').style.cursor = "grab";
+      } 
+      
+      function cursorNormal(){
+        document.getElementById('sealCanvas').style.cursor = "pointer";
+      }
+      
+      document.addEventListener("mousedown", cursorGrab);
+      document.addEventListener("mouseup", cursorNormal);
+      
+    </script>
+  </body>
+</html>
