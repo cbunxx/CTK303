@@ -13,7 +13,7 @@ h1{
 
 img{
   width:100vw;
-  height: 110px;
+  height: 115px;
   position: absolute;
 }
 
@@ -22,9 +22,10 @@ img{
 }
 
 .p2{
-  top:300px;
+  top:250px;
 }
 
 canvas {
   display: block;
 }
+
