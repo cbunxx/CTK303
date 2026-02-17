@@ -1,0 +1,91 @@
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(59, 58, 87);
+    /* display: grid; */
+    margin: 0px;
+}
+
+header{
+    background-color:rgb(216, 184, 216);
+    padding:10px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0px;
+    margin:0px;
+}
+
+/* I want to make the links scrollable at some point, likely using js */
+li {
+    display:inline-block;
+    /* margin: 20px; */
+    margin: 10px;
+}
+
+main {
+    padding: 30px;
+}
+
+h1{
+    text-transform: capitalize;
+}
+
+p {
+    font-size: 100%;
+}
+
+main img {
+    margin-bottom: 10px;
+}
+
+#bigImg {
+    width: 100%;
+}
+
+#medImg {
+    width: 100%;
+}
+
+#smallImg {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 45%;
+}
+
+/* 480px (mobile >= 428px) */
+@media all and (min-width: 30rem){
+    ul {text-align: center; }
+    li { margin-right: 1rem; margin-left: 1rem; }
+    main {padding: 30px 80px 10px 80px;}
+}
+
+/* 800px */
+@media all and (min-width: 50rem){
+    li { margin-right: 2.5rem; margin-left: 2.5rem; }
+    #bigImg{ margin-bottom: 150px;}
+    p { margin-bottom: 150px; }
+    /* main img{ float: left;}
+    #medImg { width: 60% }
+    #smallImg { width: 30%; margin-bottom: 8rem;} */
+    /* similar result ^ */
+    main{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 1rem;
+        max-width:960px;
+        margin: auto;
+    }
+    #bigImg {grid-column: span 3;}
+    main p { grid-column: span 2;}
+    #medImg {grid-column: span 2;}
+    div{float: left;}
+    #smallImg{grid-column: span 1; width:100%; margin-bottom: 8rem;}
+}
+
+/* hmmmm */
+@media all and (min-width: 90rem){
+    li { margin-right: 5rem; margin-left: 5rem; }
+}
+
+
