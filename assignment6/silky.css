@@ -1,0 +1,45 @@
+body{
+    font-family: "engria", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* color:#F2CD3A; */
+    color:#F29F3A;
+    background-color: #FFFBE8;
+    
+}
+
+main{
+    color:#323A66;
+    /* text-align: center; */
+}
+
+main img{
+     width:65%;
+}
+
+#flower{
+    padding: 100px;
+}
+
+#s-logo{
+    width:30%;
+}
+
+#silky-logo{
+    width:55%;
+    margin:auto;
+    display:block;
+    height: 50vh;
+}
+
+header a{
+    /* background-color: #4A8783; */
+    text-decoration: none;
+    /* color:#a38a24; */
+}
+
+footer a{
+    /* background-color: #4A8783; */
+    text-decoration: none;
+    color:#a38a24;
+}
