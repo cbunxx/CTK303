@@ -1,0 +1,140 @@
+body {
+    /* default font */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    color: rgb(59, 58, 87);
+    background-color: rgb(250, 255, 240);
+    margin: 0;
+}
+
+main {
+    padding: 10%;
+    /* maybe just have this ^^ for left and right */
+}
+
+#welcomeText {
+    text-align: center;
+}
+
+h1 {
+    text-transform: capitalize;
+    text-align: center;
+    color: rgb(71, 69, 143);
+    font-family: "cc-pass-the-port", Georgia;
+    font-size: 80px;
+}
+
+h2 {
+    text-transform: capitalize;
+    font-size:xx-large;
+}
+
+h3 {
+    /* text-align: center; */
+}
+
+a {
+    text-decoration: none;
+    color: rgb(71, 69, 143);
+}
+
+/* add transition */
+a:hover {
+    color: rgb(97, 94, 196);
+}
+
+#welcomeTitle {
+    margin-top: 100px;
+}
+
+#noodleRow {
+    /* two columns that span the entire browser */
+    grid-column: span 12;
+    grid-template-columns: 1fr 1fr;
+    display:grid;
+    /* I want the button to go under the description */
+    /* grid-template-rows: 1fr 1fr; */
+}
+
+#noodleImg img {
+    /* display:inline-block; */
+    /* object-fit:cover; */
+    /* height: 5%; */
+    /* width: 50px; */
+    /* grid-row: span 2; */
+}
+
+#noodlesDesc {
+    /* grid-template-columns: 1fr 1fr; */
+    grid-row: span 1;
+}
+
+#moreButton {
+    background-color:rgb(216, 184, 216);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: larger;
+    text-align: center;
+}
+
+#moreButton:hover{
+    background-color:rgb(221, 184, 224);
+}
+
+
+img {
+    /* make them all 1:1 */
+    object-fit:cover;
+    /* width:50%; */
+    height: 80%;
+    width: 90%;
+    /* round corners */
+    border-radius: 10px;
+}
+
+/* animate this */
+#load{
+    text-align: center;
+    margin: 100px 0 100px 0;
+}
+
+/* Aiming for a masonry layout here */
+/* have bg span entire site responsively */
+#galleryBlock {
+    background-color:rgb(216, 184, 216);
+    /* margin: 5%; */
+    padding: 10%;
+    /* ??? */
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-column: span 12;
+
+}
+
+.foodGallery{
+    display:grid;
+    display: inline-block;
+    grid-column: span 12;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    object-fit: cover;
+    transition: all 0.5s;
+}
+
+/* RESPONSIVE CODE */
+/* 480px (mobile >= 428px) */
+@media all and (min-width: 30rem){
+    /* ul {text-align: center; }
+    li { margin-right: 1rem; margin-left: 1rem; }
+    main {padding: 30px 80px 10px 80px;} */
+}
+
+/* 800px */
+@media all and (min-width: 50rem){
+   
+}
+
+
+
+
+
