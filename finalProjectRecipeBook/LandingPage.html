@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.typekit.net/ejz1khy.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="cooking.css">
+    <title>Let's Cook!</title>
+</head>
+<body>
+
+<div id="welcomeBlock">
+    <h1> let's cook! </h1>
+    <img src="assets/sealChefPlaceholder.png" alt="">
+    
+</div>
+
+<!-- do the wave animation to this + less opacity -->
+    <p class="waveAnimation"> feeling hungry? </p>
+
+<main>
+
+    <!--type in effect....-->
+    <p id="welcomeText"></p>
+
+    <!-- have this so that the kaomoji stays once the thing loads in 0.5 seconds -->
+    <section id="loadBlock">
+    <h3 id="load"> ༻❁𓌉◯𓇋❁༺ <br> try my favorite recipe... </h3> <!-- p or h3 -->
+    <!-- load load, then fade in the recipe (to replace this? or appear just below)-->
+
+    <!--link to its own page-->
+    <!-- add hover effects -->
+    <a href="MyRecipe.html" target=""><h2> gochujang buttered noodles <span class="RecipeCredits">by Chrissy Abobon</span> </h2></a>
+        <div id="noodleRow">
+            <!-- add filter? -->
+            <a href="MyRecipe.html" target=""><img id="noodleImg" src="assets/Chef Chrissy Chronicles Compressed/gochujangButterNoods.jpg" alt="gochujang butter noodles, by me"></a>
+            <!--short description of my thoughts/process/what the food is-->
+            <p id="noodlesDesc"> This dish is one of the first things I've made on my own. It's a simple yet powerful dish that led me to fall in love with cooking, especially when trying to use up the rest of my groceries. A lot of it was also eyeballing and taste testing as I went, so feel free to tweak the recipe to your liking. You can make this NewYorkTimes favorite, Korean-Western pasta in less than 10 steps!
+            <br><br>
+            "SOoooooo delicious" -Isabel C, future high school history teacher 
+           <button><a id="moreButton" href="MyRecipe.html" target="">✭ sounds good! ✭</a></button> 
+        
+        </p>          
+            
+        </div>
+
+        <!-- <button><a id="moreButton" href="MyRecipe.html" target="">✭ sounds good! ✭</a></button> -->
+    
+    </section>
+</main>
+
+    <div id="galleryBlock">
+    <!--include a short gallery of my chef chrissy chronicles at the end-->
+    <h2>chef chrissy chronicles</h2>
+        <p> Here are some more photos of other things I learned to make this year!!</p>
+
+    <!-- add hover captions -->
+        <img class="foodGallery" src="assets/Chef Chrissy Chronicles Compressed/tortangTalong.jpg" alt="Tortang talong">
+        <!-- <img class="foodGallery" src="assets/Chef chrissy chronicles/" alt="Beef bulgogi"> -->
+        <img class="foodGallery" src="assets/Chef Chrissy Chronicles Compressed/brownieCookies.jpg" alt="Brownie cookies">
+        <!-- check multiple rice pics -->
+        <img class="foodGallery" src="assets/Chef Chrissy Chronicles Compressed/kimchiFriedRice.jpg" alt="Kimchi fried rice">
+        <img class="foodGallery" src="assets/Chef Chrissy Chronicles Compressed/kimchiJiggae.jpg" alt="Kimchi stew">
+        <img class="foodGallery" src="assets/Chef Chrissy Chronicles Compressed/homemadePho.jpg" alt="Homemade Pho">
+        <!-- check egg rolls -->
+        <img class="foodGallery" src="assets/Chef Chrissy Chronicles Compressed/omeletteRoll.jpg" alt="rolled omelets">
+        <img class="foodGallery" src="assets/Chef Chrissy Chronicles Compressed/galentinesSushiBake.jpg" alt="Galentines sushi bake">
+        <img class="foodGallery" src="assets/Chef Chrissy Chronicles Compressed/sinigang.jpg" alt="Sinigang na hipon - Filipino sour soup with shrimp">
+        <img class="foodGallery" src="assets/Chef Chrissy Chronicles Compressed/spamTocinoPotatoEgg.jpg" alt="Cubed potatoes, cheesy spinach omelet, and spam tocino">
+        <img class="foodGallery" src="assets/Chef Chrissy Chronicles Compressed/bananaMuffins.jpg" alt="banana muffins">
+        <!-- check -->
+        <img class="foodGallery" src="assets/Chef Chrissy Chronicles Compressed/japaneseCurry.jpg" alt="Japanese curry with chicken thighs"> 
+        <img class="foodGallery" src="assets/Chef Chrissy Chronicles Compressed/thaiRedCurry.jpg" alt="Thai red curry">
+        <img class="foodGallery" src="assets/Chef Chrissy Chronicles Compressed/bellPeppers.jpg" alt="Stuffed bell peppers and Filipino mac-spaghetti">
+        <img class="foodGallery" src="assets/Chef Chrissy Chronicles Compressed/appleCookies.jpg" alt="Apple sugar cookies">
+        <img class="foodGallery" src="assets/Chef Chrissy Chronicles Compressed/pizza.jpg" alt="Cottage cheese pizza">
+        <img class="foodGallery" src="assets/Chef Chrissy Chronicles Compressed/eggBite.jpg" alt="Egg bites with avocado, kimchi, sriracha mayom and purple rice">
+        <img class="foodGallery" src="assets/Chef Chrissy Chronicles Compressed/glazedSalmon.jpg" alt="Pan-fried salmon with bulgogi glaze">
+        <img class="foodGallery" src="assets/Chef Chrissy Chronicles Compressed/porkchopShrimp.jpg" alt="Butterfly porkchops and butter garlic shrimp">
+        <img class="foodGallery" src="assets/Chef Chrissy Chronicles Compressed/porkbelly.jpg" alt="Kbbq porkbelly with green onion salad">
+        <img class="foodGallery" src="assets/Chef Chrissy Chronicles Compressed/bibimbap.jpg" alt="rice bowl with beef bulgogi and sweet chili sriracha">
+
+    </div>
+
+
+
+<!-- simple contact block -->
+ <!-- add some cute stuff... -->
+<footer> 
+     <p> ✭ If you want more recipes, reach out at cjabobon@gmail.com! ✭ </p>
+</footer>
+
+
+
+
+ <script> 
+    var i = 0;
+    var text = "Despite food being a huge part in my Filipino culture, cooking together wasn't really a thing in my family. But, over the school year, I got to learn how to cook on my own for the first time! Out of several recipes and techniques that I've tried, there was one in particular that I couldn't get enough of.";
+    var speed = 200; // how long it will take in milliseconds
+    
+    var welcomeTxt = document.getElementById("welcomeText");
+    var loadText = document.getElementById("loadBlock"); //variable to be shown after typingEffect() is done
+    // var flag = false;    
+    
+    // fix this so that it just gets triggered when windowScrollY > 600 ONCE, and that the rest of the window is limited... also gets too fast once i scroll more?
+    function typingEffect() {
+        var windowScroll = window.scrollY;
+        var welcomeTxtTop = welcomeTxt.offsetTop;
+        console.log("windowScroll: ", windowScroll);
+        if (welcomeTxtTop - windowScroll < 600){
+             if (i < text.length) {
+                document.getElementById("welcomeText").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typingEffect, speed); //avoids executing this function again, given the speed
+            }
+        }
+
+        // i want it to show sections separately
+        //also wondering if there's a way to refresh the page and start at the top each time
+        if (i == text.length){
+            loadText.classList.add("show");
+            console.log("i == txt.length");
+        } 
+        
+        // if (i > text.length){
+        //     loadText.classList.remove("show");
+        //     console.log("replaced by the rest of the page");
+        //     loadText.classList.add("main");
+        // }
+    }
+
+    window.addEventListener("scroll", typingEffect);
+
+</script>
+
+
+</body>
+</html>
