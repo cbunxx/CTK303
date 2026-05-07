@@ -1,0 +1,371 @@
+ /* SHARED ELEMENTS */
+ body {
+    /* default font */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    color: rgb(59, 58, 87);
+    background-color: rgb(250, 255, 240);
+    margin: 0;
+}
+
+main {
+    /* makes everything under h1 and gallery more center-spaced */
+    padding: 10%;
+    /* maybe just have this ^^ for left and right */
+}
+
+h1 {
+    text-transform: capitalize;
+    text-align: center;
+    color: rgb(71, 69, 143);
+    font-family: "cc-pass-the-port", Georgia;
+    font-size: 80px;
+}
+
+h2 {
+    text-transform: capitalize;
+    font-size:xx-large;
+}
+
+h3 {
+    font-size: x-large;
+}
+
+p {
+    font-size: large;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(71, 69, 143);
+    transition: all 0.5s;
+}
+
+a:hover {
+    color: rgb(112, 108, 228);
+    /* cursor: url(assets/wooden-spoon-resized.png), auto; */
+
+}
+
+img {
+    /* don't make them all 1:1... */
+    object-fit:cover;
+    /* width:50%; */
+    height: 80%;
+    width: 90%;
+    /* round corners */
+    border-radius: 10px;
+}
+
+img:hover {
+    cursor: url(assets/wooden-spoon-resized.png), auto;
+
+}
+
+footer {
+    /* top left right bottom */
+    /* background-color:rgb(216, 184, 216); */
+    padding: 5%;
+    grid-column: span 12;
+    text-align: center;
+    background-color: rgb(71, 69, 143);
+}
+
+footer p {
+    font-size:23px;
+    color:rgb(216, 184, 216);
+}
+
+/* lANDING PAGE STYLING */
+#welcomeBlock {
+    margin-top: 300px;
+    margin-bottom: 300px;
+    
+}
+
+#welcomeBlock h1{
+    margin-bottom: 0px;
+}
+
+#welcomeBlock img{
+    /* center the image */
+    display: block;
+    margin: auto;
+
+    width: 150px;
+    border-radius: 100px;
+}
+
+/* lookie hereeeeeeee */
+.waveAnimation {
+    text-align: center;
+}
+
+#welcomeText {
+    text-align: center;
+    font-size: 21px;
+    color: #529799;
+}
+
+
+.RecipeCredits {
+    font-size: 20px;
+    text-transform: none;
+    color: rgba(72, 69, 143, 0.74);
+
+}
+
+#noodleRow {
+    /* two columns that span the entire browser */
+    grid-template-columns: 1fr 1fr;
+    display: grid; 
+}
+
+#noodleRow img {
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+
+#noodleRow img:hover {
+    opacity: 0.95;
+    transform: scale(0.98);
+    /* turn cursor into a fork!! */
+}
+
+
+button{
+    background-color:rgb(216, 184, 216);
+    /* cursor: grab; */
+    border: none;
+    border-radius: 15px;
+    margin:auto;
+    display:block;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+#moreButton {
+    /* background-color:rgb(216, 184, 216); */
+    padding: 10px;
+    border-radius: 10px;
+    font-size: larger;
+    text-align: center;
+    transition: all 1s ease;
+    
+}
+
+#moreButton:hover{
+    letter-spacing: 2px;
+}
+
+#load{
+    text-align: center;
+    margin: 100px 0 100px 0;
+}
+
+#loadBlock{
+    /* fade in */
+    opacity: 0;
+   transform: translate(0,-50px);
+   transition: all 2s;
+}
+
+#loadBlock.show {
+   opacity: 1;
+   transform: translate(0,0);
+}
+
+
+/* Aiming for a masonry layout here.... */
+/* have bg span entire site responsively */
+#galleryBlock {
+    background-color:rgb(216, 184, 216);
+    /* top right bottom left */
+    padding: 30px 10% 40px 10%;
+    /* ??? */
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-column: span 12;
+
+}
+
+#galleryBlock h2{
+    text-align: center;
+}
+
+#galleryBlock p{
+    text-align: center;
+}
+
+.foodGallery{
+    display: inline-block;
+    grid-column: span 12;
+    /* width: 300px;
+    height: 300px; */
+    /* margin: 10px; */
+    object-fit: cover;
+    transition: all 0.5s;
+    /* width: 126px;
+        height: 126px;
+        margin: 2px; */
+}
+
+
+/* RECIPE PAGES */
+.recipeMain {
+    padding-top:0;
+}
+
+
+nav {
+    /* top right bottom left */
+    padding: 30px 0px 30px 30px;
+    background-color:rgb(216, 184, 216);
+}
+
+nav a {
+    font-size:x-large;
+    /* text-decoration: underline; */
+}
+
+.mainPhoto{
+    display: block;
+    margin:auto;
+
+    /* object-fit: cover; */
+    width: 80%;
+    height:700px;
+    /* fix height width to be consistent across devices  */
+}
+
+
+ul li {
+    font-size: x-large;
+    /* padding-left: 30%; */
+    list-style: none;
+}
+
+#recipe {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* animate these images to be interactive with clicking */
+.ingredients {
+    margin: 130px;
+    /* display: flex; */
+}
+
+.ingredients img{
+    margin: auto;
+    width: 100px;
+    /* border-radius: 50px; */
+    transition-delay: 5s;
+}
+
+.ingredients img:hover{
+    animation: foodSpin linear 0.5s infinite;
+    /* can't make another animation property */
+    /* make these spin 360 and back even after leaving hover state (probably js) */
+    /* also change degree direction depending on mouse side...? */
+
+}
+
+@keyframes foodSpin {
+    /* 0% {  transform: rotate(0deg);  } */
+    15% { transform: rotate(15deg); }
+    50% { transform: rotate(-15deg); }
+    /* 100% { transform: rotate(0deg); } */
+}
+
+/* .GreenOnion img:hover{
+    
+} */
+
+#endBlock p {
+    font-style:italic;
+    text-align: center;
+}
+
+#endBlock a {
+    text-decoration: underline;
+}
+
+#noods {
+    width: 200px;
+}
+
+
+
+/* RESPONSIVE CODE */
+/* 480px (mobile >= 428px) */
+/* when page is above this smallest dimension */
+@media all and (min-width: 30rem){
+
+    #noodleRow {
+        /* allow row to be in one column instead */
+        display: inline-block;
+    }
+
+    #noodleImg img {
+        object-fit:cover;
+        height: 80%;
+        width: 90%;
+        border-radius: 10px;
+        
+    }
+
+    .foodGallery {
+        width: 126px;
+        height: 126px;
+        margin: 2px;
+    }
+
+    .recipeMain h1{
+        font-size: 50px;
+    }
+
+    .mainPhoto{
+        width: 100%;
+        height:50%;
+    }
+
+    .ingredients {
+        /* width: 30px; */
+        display:inline-block;
+
+    }
+
+
+}
+
+/* 800px - medium sized*/
+@media all and (min-width: 50rem){
+  #noodleRow {
+        display: grid;
+    }
+
+    .foodGallery{
+        width:300px;
+        height: 300px;
+        margin: 10px; 
+    }
+
+    .mainPhoto{
+        width: 80%;
+        height:700px;
+    }
+
+    .ingredients {
+        /* width: 30px; */
+        display:flex;
+    }
+
+    .recipeMain h1{
+        font-size: 100px;
+    }
+
+} 
+
+
+
